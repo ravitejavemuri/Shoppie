@@ -1,0 +1,383 @@
+<!DoCtype html>
+<html>
+<head>
+<title>Shoppie </title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Assign.css">
+<link rel="stylesheet" href="AssignC/css/bootstrap.css">
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/m-f-plexus-italic" type="text/css"/>
+ <link rel="icon" href="imgs/fav.png" type="image/gif" sizes="16x16">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="AssignC/js/bootstrap.min.js"></script>
+  <script >
+  (function($){
+	$(document).ready(function(){
+		$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+			event.preventDefault(); 
+			event.stopPropagation(); 
+			$(this).parent().siblings().removeClass('open');
+			$(this).parent().toggleClass('open');
+		});
+	});
+})(jQuery);
+
+
+  </script>
+  
+    <script>
+  var added =[];
+  var Total =[];
+  var sum=0;
+  var pro={pro1:200,pro2:280,pro3:420,pro4:9000,pro5:12000};
+  
+function add1()
+{
+added.push('NilkamalC15:---Rs.200');
+Total.push(pro.pro1);
+}
+function add2()
+{
+added.push('HomeDecor:---Rs.280 ');
+Total.push(pro.pro2);
+}
+function add3()
+{
+added.push('TV Stand32:---Rs.420');
+Total.push(pro.pro3);
+}
+function add4()
+{
+added.push('Samsung:---Rs.9000');
+Total.push(pro.pro4);
+}
+function add5()
+{
+added.push('LG:---Rs.12000');
+Total.push(pro.pro5);
+}
+
+
+
+
+function checout()
+{
+	
+	for(var i=0;i<added.length;i++)
+	{
+		document.write(added[i]+"<br />");
+		
+		
+	}
+		for( var j=0;j<Total.length;j++)
+			{
+				sum+= Total[j];
+				
+				
+			}
+		document.write("<br /> Bill:"+sum);
+
+}
+  </script>
+  <style>
+   .affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+  
+
+  </style>
+
+</head>
+
+<body class="">
+
+
+		        <nav class="navbar navbar-default  marginBottom-0" role="navigation"  data-spy="affix" data-offset-top="197">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+             <a class="navbar-brand p " href="#">SHOPPIE</a>
+            </div>
+			
+            
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+              
+					 
+                    <li class="dropdown"><a href="#"   class="dropdown-toggle  " data-toggle="dropdown">Furniture <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+                           
+                         
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Chair<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a    data-toggle="modal" data-target="#myModal" href="" >NilKamal C15</a></li>
+									<li><a   data-toggle="modal" data-target="#myModal1" href="" >HomeDecor Chair</a></li>
+								
+								</ul>
+							</li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">TV Stands<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a  data-toggle="modal" data-target="#myModal2"  href="#">NilKamal TV Stand 32 inch</a></li>
+								
+									
+										</ul>
+									</li>
+								</ul>
+							</li>
+							
+							  <li class="dropdown"><a href="#"  class="dropdown-toggle " data-toggle="dropdown">Electronics<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+                           
+                        
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Washing Machine<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a  type="button"  data-toggle="modal" data-target="#myModal3" href="#" >Samsung 6STBR</a></li>
+									<li><a type="button"  data-toggle="modal" data-target="#myModal4" href="#" >LG-T534</a></li>
+								
+								</ul>
+							</li>
+                            
+								</ul>
+							</li>
+                        </ul>
+                    </li>
+                   
+            </div><!-- /.navbar-collapse -->
+        </nav>
+        
+ <div class="modal fade" id="myModal" role="dialog">
+	<div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">NilKamal C15</h4>
+        </div>
+        <div class="modal-body">
+			<div class="row">
+			
+			<div class="col-md-6"><img src="imgs/c15.jpg" class="img-responsive"></div>
+			<div class="col-md-6"><h4><b>Description</b>:N/A</h4>
+			<div class="rating">
+				<h4><b>Rating:</b>4</h4>
+			
+				<h3>Price:200</h3>
+				
+				<button onclick="add1()" class="btn btn-lg btn-primary">Add to cart</button>
+				</div>
+			
+			</div>
+			
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+   <div class="modal fade" id="myModal1" role="dialog">
+	<div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">HomeDecor Chair</h4>
+        </div>
+        <div class="modal-body">
+         	<div class="row">
+			
+			<div class="col-md-6"><img src="imgs/hmd.jpg" class="img-responsive"></div>
+			<div class="col-md-6"><h4><b>Description</b>:N/A</h4>
+			<div class="rating">
+			<h4><b>Rating:</b>4</h4>
+		
+				<h3>Price:280</h3>
+				<button onclick="add2()" class="btn btn-lg btn-primary">Add to cart</button>
+				</div>
+			</div>
+			
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+   <div class="modal fade" id="myModal2" role="dialog">
+	<div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">NilKamal TV Stand 32 inch</h4>
+        </div>
+        <div class="modal-body">
+          	<div class="row">
+			
+			<div class="col-md-6"><img src="imgs/32.jpg" class="img-responsive"></div>
+			<div class="col-md-6"><h4><b>Description</b>:N/A</h4>
+			<h4><b>Rating:</b>3.5</h4>
+			
+				
+				
+			<h3>Price:420</h3>
+				<button onclick="add3()" class="btn btn-lg btn-primary">Add to cart</button>
+			</div>
+			
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+
+  
+  
+  
+   <div class="modal fade" id="myModal3" role="dialog">
+	<div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Samsung 6STBR</h4>
+        </div>
+        <div class="modal-body">
+        	<div class="row">
+			
+			<div class="col-md-6"><img src="imgs/smg.jpg" class="img-responsive"></div>
+			<div class="col-md-6"><h4><b>Description</b>: 6kg Top Load Fully Automatic</h4>
+			<h4><b>Rating:</b>4.5</h4>
+			
+				
+				
+			<h3>Price:9000</h3>
+				<button  onclick="add4()" class="btn btn-lg btn-primary">Add to cart</button>
+			</div>
+			
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  
+   <div class="modal fade" id="myModal4" role="dialog">
+	<div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">LG-T534</h4>
+        </div>
+        <div class="modal-body">
+          	<div class="row">
+			
+			<div class="col-md-6"><img src="imgs/lg.jpg" class="img-responsive"></div>
+			<div class="col-md-6"><h4><b>Description</b>:N/A</h4>
+				<h4><b>Rating:</b>3.2</h4>
+				
+				
+			<h3>Price:12000</h3>
+				<button onclick="add5()" class="btn btn-lg btn-primary">Add to cart</button>
+			</div>
+			
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+       
+
+        <div class="container">
+        
+            <div class="row jumbotron">
+               <h1 class="text-center">Shop your Choice</h1>
+			   
+			   
+			    <button type="button" class="btn btn-info center-block btn-lg" data-toggle="modal" data-target="#myModalme">About me</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModalme" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Information</h4>
+        </div>
+        <div class="modal-body">
+          <p>Ravi Teja Vemuri<br />
+			+91 9030244016<br />
+			vemteja@gmail.com<br />
+		  </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <button type="button" onclick="checout()" class="btn center-block btn-default" >Checkout</button>
+
+
+
+
+            
+               <br>
+            </div>
+
+        </div>
+		
+		<div class="container-fluid">
+			
+			<div class="well navbar-fixed-bottom">
+			 <h6 class="text-center">@copy-rights SHOPPIE</h6>
+			</div>
+		
+		
+		</div>
+
+</body>
+
+</html>
+
